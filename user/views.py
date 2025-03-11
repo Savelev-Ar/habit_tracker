@@ -22,8 +22,8 @@ class UserCreateView(generics.CreateAPIView):
     def perform_create(self, serializer):
         user = serializer.save()
         user.set_password(user.password)
-        if user.tg_username.startswith("@"):
-            user.tg_username = user.tg_username.lstrip("@")
+        if user.tele_user.startswith("@"):
+            user.tele_user = user.tele_user.lstrip("@")
         user.save()
 
 

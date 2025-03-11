@@ -11,3 +11,5 @@ redis==5.2.1
 djangorestframework_simplejwt==5.5.0
 django-cors-headers==4.7.0
 drf-yasg==1.21.10
+requests==2.32.3
+pyTelegramBotAPI==4.26.0
