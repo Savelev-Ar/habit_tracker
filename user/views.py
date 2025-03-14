@@ -30,7 +30,7 @@ class UserCreateView(generics.CreateAPIView):
 class UserHabitListView(generics.ListAPIView):
     """
     Контроллер отвечает за отображение списка привычек, созданных
-    текущим авторизованным пользователем
+    текущим авторизованным пользователем с пагинацией
     """
 
     serializer_class = HabitSerializer
